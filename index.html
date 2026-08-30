@@ -458,18 +458,18 @@
         </div>
       </div>
       <div class="col">
-        <form action="mailto:info@annubeautystudios.com" method="POST" enctype="text/plain">
+        <form id="inquiry-form" action="https://docs.google.com/forms/d/e/1FAIpQLSdoMoViM80X0sasMXlIAifcTZT9TWbvmTYvFGEsXE9OLPoTmg/formResponse" method="POST" target="hidden_iframe">
           <div class="form-row">
             <label for="name">Full Name</label>
-            <input type="text" id="name" name="name" placeholder="Your name" required>
+            <input type="text" id="name" name="entry.269530511" placeholder="Your name" required>
           </div>
           <div class="form-row">
             <label for="email">Email</label>
-            <input type="email" id="email" name="email" placeholder="you@email.com" required>
+            <input type="email" id="email" name="entry.358645695" placeholder="you@email.com" required>
           </div>
           <div class="form-row">
             <label for="service">Service / Specialty</label>
-            <select id="service" name="service">
+            <select id="service" name="entry.432815085">
               <option>Hairstylist</option>
               <option>Barber</option>
               <option>Braider</option>
@@ -489,14 +489,35 @@
           </div>
           <div class="form-row">
             <label for="message">Message</label>
-            <textarea id="message" name="message" placeholder="Tell us about your business and what you're looking for..."></textarea>
+            <textarea id="message" name="entry.656913268" placeholder="Tell us about your business and what you're looking for..."></textarea>
           </div>
           <button type="submit" class="btn btn-primary">Join the Waitlist</button>
+          <p id="form-status" style="margin-top:1rem;display:none;"></p>
         </form>
+        <iframe name="hidden_iframe" style="display:none;"></iframe>
       </div>
     </div>
   </div>
 </section>
+
+<script>
+  (function () {
+    var form = document.getElementById('inquiry-form');
+    var status = document.getElementById('form-status');
+    var iframe = document.querySelector('iframe[name="hidden_iframe"]');
+    var submitted = false;
+    iframe.addEventListener('load', function () {
+      if (!submitted) return;
+      form.reset();
+      form.style.display = 'none';
+      status.style.display = 'block';
+      status.textContent = "Thanks! We've received your inquiry and will be in touch soon.";
+    });
+    form.addEventListener('submit', function () {
+      submitted = true;
+    });
+  })();
+</script>
 
 <footer>
   <div class="foot-tagline">Timeless Beauty. Limitless Possibilities.</div>
