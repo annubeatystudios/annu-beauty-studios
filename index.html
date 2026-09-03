@@ -1,7 +1,7 @@
 <meta charset="UTF-8">
 <meta name="viewport" content="width=device-width, initial-scale=1.0">
 <title>Annu Beauty Studios</title>
-<meta name="description" content="Annu Beauty Studios — luxury salon suite rentals and a business growth hub for independent beauty, wellness, and service professionals in Atlanta, GA.">
+<meta name="description" content="Annu Beauty Studios — luxury salon suite rentals and a business growth hub for beauty, wellness, business, and ecommerce entrepreneurs in Atlanta, GA.">
 <link rel="preconnect" href="https://fonts.googleapis.com">
 <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
 <link href="https://fonts.googleapis.com/css2?family=Bodoni+Moda:ital,wght@0,400;0,500;0,600;0,700;1,400&family=Manrope:wght@300;400;500;600;700;800&display=swap" rel="stylesheet">
@@ -230,6 +230,26 @@
     .promise-lines{font-size:22px;}
   }
 
+  /* CO-WORKING */
+  .coworking{background:var(--pearl);}
+  .hero-tier{
+    background:var(--black);color:var(--pearl);border-radius:var(--radius);
+    padding:44px;border:1px solid var(--gold);max-width:640px;margin:0 auto 56px;text-align:center;
+  }
+  .hero-tier .badge{margin-bottom:16px;}
+  .hero-tier h3{color:#fff;font-size:26px;margin-bottom:10px;}
+  .hero-tier-sub{color:var(--sand);font-size:15px;font-weight:300;margin-bottom:26px;}
+  .hero-tier .amenity-list{text-align:left;max-width:420px;margin:0 auto 18px;}
+  .hero-tier .amenity-list li{color:#eee7d8;}
+  .hero-tier .amenity-list li::before{color:var(--gold);}
+  .hero-tier .footnote{font-size:12px;color:#8a8471;margin-bottom:24px;}
+  .table-scroll{overflow-x:auto;}
+  .coworking-table{min-width:560px;}
+  .coworking-table th:nth-child(3),.coworking-table td:nth-child(3){font-size:13.5px;color:#5c564a;}
+  .founding-note{margin-top:24px;}
+  .founding-note p{color:#eee7d8;font-size:15px;font-weight:300;margin:0;}
+  .founding-note strong{color:var(--gold);}
+
   /* THE SPACE */
   .space-section{background:var(--pearl);}
   .space-flex{display:flex;gap:56px;align-items:center;}
@@ -252,6 +272,7 @@
       <li><a href="#space">Our Space</a></li>
       <li><a href="#studio">More Than a Studio</a></li>
       <li><a href="#suites">Suites &amp; Pricing</a></li>
+      <li><a href="#coworking">Co-Working</a></li>
       <li><a href="#about">About</a></li>
       <li><a href="#contact">Contact</a></li>
     </ul>
@@ -263,7 +284,7 @@
   <div class="wrap">
     <span class="eyebrow">Atlanta, Georgia · Now Pre-Leasing</span>
     <h1>Build Your Business.<br><em>Elevate Your Brand.</em></h1>
-    <p>Annu Beauty Studios is a luxury salon suite &amp; business growth hub for independent beauty, wellness, and service professionals — where your workspace helps you grow, not just serve clients.</p>
+    <p>Annu Beauty Studios is a luxury salon suite &amp; business growth hub for independent entrepreneurs — beauty and wellness professionals, business professionals, and ecommerce sellers alike — where your workspace helps you grow, not just serve clients.</p>
     <div class="btn-row">
       <a href="#contact" class="btn btn-primary">Reserve Your Suite</a>
       <a href="#suites" class="btn btn-outline">View Suites &amp; Pricing</a>
@@ -276,7 +297,7 @@
     <div class="col">
       <span class="eyebrow" style="color:var(--gold-dark);">Coming to Atlanta</span>
       <h2>A Space Built to Match Your Ambition.</h2>
-      <p>This is Annu Beauty Studios — a private, professional home for independent beauty and wellness entrepreneurs, designed from the ground up to feel like more than a rented room.</p>
+      <p>This is Annu Beauty Studios — a private, professional home for independent entrepreneurs across beauty, wellness, business, and ecommerce, designed from the ground up to feel like more than a rented room.</p>
       <p>Every detail, from the finishes to the lighting, was chosen to reflect the caliber of the professionals who will work here.</p>
     </div>
     <div class="col">
@@ -323,34 +344,6 @@
   </div>
 </section>
 
-<section class="pros">
-  <div class="wrap">
-    <div class="section-head">
-      <span class="eyebrow">Built for Independent Service Providers</span>
-      <h2>Welcoming Professionals Across Every Industry</h2>
-      <p>Annu Beauty Studios welcomes professionals across a variety of industries.</p>
-    </div>
-    <div class="pro-grid">
-      <div class="pro-chip">Hairstylists</div>
-      <div class="pro-chip">Barbers</div>
-      <div class="pro-chip">Braiders</div>
-      <div class="pro-chip">Makeup Artists</div>
-      <div class="pro-chip">Estheticians / Med Spas</div>
-      <div class="pro-chip">Lash Artists</div>
-      <div class="pro-chip">Nail Technicians</div>
-      <div class="pro-chip">Massage Therapists</div>
-      <div class="pro-chip">Wellness Practitioners</div>
-      <div class="pro-chip">Permanent Makeup Artists</div>
-      <div class="pro-chip">Brow Specialists</div>
-      <div class="pro-chip">Tattoo Artists</div>
-      <div class="pro-chip">Content Creators</div>
-      <div class="pro-chip">Coaches &amp; Consultants</div>
-      <div class="pro-chip">Health &amp; Wellness Pros</div>
-      <div class="pro-chip">Appointment-Based Entrepreneurs</div>
-    </div>
-  </div>
-</section>
-
 <section class="suites" id="suites">
   <div class="wrap">
     <div class="section-head">
@@ -359,11 +352,11 @@
       <p>Private, professional suites for every kind of beauty &amp; wellness practice — leased weekly or monthly with no long-term lock-in.</p>
     </div>
 
-    <div class="suite-types">
-      <div class="suite-type"><span class="icon">💇🏾‍♀️</span><h4>Hair Studio</h4><p>Hydraulic chair, shampoo bowl &amp; vanity</p></div>
-      <div class="suite-type"><span class="icon">✨</span><h4>Esthetician / Nail</h4><p>Facial &amp; nail table configuration</p></div>
-      <div class="suite-type"><span class="icon">💫</span><h4>Lash &amp; PMU</h4><p>Lash beds, lighting &amp; microblading setup</p></div>
-      <div class="suite-type"><span class="icon">🧘🏾‍♀️</span><h4>Massage &amp; Wellness</h4><p>Therapy tables &amp; calming private space</p></div>
+    <div class="pro-grid" style="margin-bottom:56px;">
+      <div class="pro-chip">Beauty Studio</div>
+      <div class="pro-chip">Business Professionals</div>
+      <div class="pro-chip">Co-Working Space</div>
+      <div class="pro-chip">Studio Rental</div>
     </div>
 
     <div class="pricing-card">
@@ -371,7 +364,7 @@
       <p class="pricing-sub">Below-market pricing designed to make independence accessible.</p>
       <table class="price-table">
         <tr><th>Term</th><th>Rate</th></tr>
-        <tr><td>Weekly</td><td class="amount">$175 – $375 / week</td></tr>
+        <tr><td>Weekly</td><td class="amount">$175 – $400 / week</td></tr>
         <tr><td>Monthly</td><td class="amount">$600 – $1,400 / month</td></tr>
         <tr><td>Daily Booth <span style="color:#8a8471;font-weight:400;">(not ready for a full suite yet?)</span></td><td class="amount">$45 / day</td></tr>
       </table>
@@ -384,6 +377,56 @@
         <li>Content creation corner (ring lights, backdrop)</li>
       </ul>
       <a href="#contact" class="btn btn-primary">Request Suite Availability</a>
+    </div>
+  </div>
+</section>
+
+<section class="coworking" id="coworking">
+  <div class="wrap">
+    <div class="section-head">
+      <span class="eyebrow" style="color:var(--gold-dark);">Co-Working Membership</span>
+      <h2>A Professional Business Hub — Not Just a Desk.</h2>
+      <p>Flexible workspace for business professionals, consultants, and ecommerce entrepreneurs who need a place to work, meet, and grow — without the overhead of a traditional office.</p>
+    </div>
+
+    <div class="hero-tier">
+      <span class="badge">Most Popular</span>
+      <h3>Unlimited Coworking — $249/month</h3>
+      <p class="hero-tier-sub">Unlimited access to shared workspace, built for the entrepreneur who works better outside the house.</p>
+      <ul class="amenity-list">
+        <li>High-speed WiFi</li>
+        <li>Professional shared workspace</li>
+        <li>24/7 access*</li>
+        <li>Free parking</li>
+        <li>Coffee &amp; water</li>
+        <li>Member networking</li>
+        <li>Discounted meeting room rentals</li>
+        <li>Discounted content space rentals</li>
+      </ul>
+      <p class="footnote">*Where our building's access &amp; security setup supports it.</p>
+      <a href="#contact" class="btn btn-primary">Join as a Founding Member</a>
+    </div>
+
+    <div class="pricing-card">
+      <h3>All Co-Working Memberships</h3>
+      <p class="pricing-sub">Choose the level of access that matches how you work.</p>
+      <div class="table-scroll">
+        <table class="price-table coworking-table">
+          <tr><th>Membership</th><th>Price</th><th>Includes</th></tr>
+          <tr><td>Day Pass</td><td class="amount">$25 / day</td><td>Shared workspace, WiFi, lounge &amp; common areas</td></tr>
+          <tr><td>5-Day Pack</td><td class="amount">$99</td><td>Any 5 days within 30 days</td></tr>
+          <tr><td>Flex Membership</td><td class="amount">$149 / mo</td><td>8 coworking days per month</td></tr>
+          <tr><td>Unlimited Coworking</td><td class="amount">$249 / mo</td><td>Unlimited shared workspace access</td></tr>
+          <tr><td>Business Membership</td><td class="amount">$349 / mo</td><td>Unlimited coworking + business address/mail + meeting-room credits</td></tr>
+          <tr><td>Dedicated Desk</td><td class="amount">$399 – $450 / mo</td><td>Reserved workstation + everything in Unlimited</td></tr>
+          <tr><td>Private Office</td><td class="amount">$1,250 – $1,500+ / mo</td><td>24/7 private office + premium amenities</td></tr>
+        </table>
+      </div>
+      <div class="gold-card founding-note">
+        <h3>Founding 25 Offer</h3>
+        <p>The first 25 members lock in Unlimited Coworking for <strong>$199/month for 12 months</strong> — instead of $249.</p>
+      </div>
+      <a href="#contact" class="btn btn-primary" style="margin-top:24px;">Request Co-Working Membership</a>
     </div>
   </div>
 </section>
@@ -422,7 +465,7 @@
       <h2>Meet the Founder</h2>
       <span class="role">Ashayla Anu — Founder &amp; CEO</span>
       <p>Ashayla rented a suite in Atlanta as a loctician and rock stylist for years before she ever thought about owning the building. She knows exactly what suite rental is missing — the fees that aren't in the contract, the landlord who never asks how business is going, the isolation of building alone — because she lived it first.</p>
-      <p>So she built the thing she wished existed: a luxury studio space with real support behind it. Our mission is simple — give beauty and wellness professionals an affordable, luxury environment where they can launch, run, and grow thriving businesses, without going it alone.</p>
+      <p>So she built the thing she wished existed: a luxury studio space with real support behind it. Our mission is simple — give beauty, wellness, business, and ecommerce entrepreneurs an affordable, luxury environment where they can launch, run, and grow thriving businesses, without going it alone.</p>
     </div>
     <div class="col">
       <div class="values-grid">
@@ -484,6 +527,8 @@
               <option>Tattoo Artist</option>
               <option>Content Creator</option>
               <option>Coach / Consultant</option>
+              <option>Business Professional</option>
+              <option>Ecommerce / Online Business</option>
               <option>Other</option>
             </select>
           </div>
